@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		726171361FAC24C3000E4DB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726171351FAC24C3000E4DB8 /* AppDelegate.swift */; };
+		726171381FAC24C3000E4DB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726171371FAC24C3000E4DB8 /* ViewController.swift */; };
+		7261713B1FAC24C3000E4DB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726171391FAC24C3000E4DB8 /* Main.storyboard */; };
+		7261713D1FAC24C3000E4DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7261713C1FAC24C3000E4DB8 /* Assets.xcassets */; };
+		726171401FAC24C3000E4DB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7261713E1FAC24C3000E4DB8 /* LaunchScreen.storyboard */; };
+		7261714B1FAC24C3000E4DB8 /* PixelfordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261714A1FAC24C3000E4DB8 /* PixelfordTests.swift */; };
+		726171561FAC24C3000E4DB8 /* PixelfordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726171551FAC24C3000E4DB8 /* PixelfordUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		726171471FAC24C3000E4DB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7261712A1FAC24C3000E4DB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 726171311FAC24C3000E4DB8;
+			remoteInfo = Pixelford;
+		};
+		726171521FAC24C3000E4DB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7261712A1FAC24C3000E4DB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 726171311FAC24C3000E4DB8;
+			remoteInfo = Pixelford;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		726171321FAC24C3000E4DB8 /* Pixelford.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pixelford.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		726171351FAC24C3000E4DB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		726171371FAC24C3000E4DB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7261713A1FAC24C3000E4DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7261713C1FAC24C3000E4DB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7261713F1FAC24C3000E4DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		726171411FAC24C3000E4DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		726171461FAC24C3000E4DB8 /* PixelfordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelfordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7261714A1FAC24C3000E4DB8 /* PixelfordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelfordTests.swift; sourceTree = "<group>"; };
+		7261714C1FAC24C3000E4DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		726171511FAC24C3000E4DB8 /* PixelfordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelfordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		726171551FAC24C3000E4DB8 /* PixelfordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelfordUITests.swift; sourceTree = "<group>"; };
+		726171571FAC24C3000E4DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7261712F1FAC24C3000E4DB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726171431FAC24C3000E4DB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7261714E1FAC24C3000E4DB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		726171291FAC24C3000E4DB8 = {
+			isa = PBXGroup;
+			children = (
+				726171341FAC24C3000E4DB8 /* Pixelford */,
+				726171491FAC24C3000E4DB8 /* PixelfordTests */,
+				726171541FAC24C3000E4DB8 /* PixelfordUITests */,
+				726171331FAC24C3000E4DB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		726171331FAC24C3000E4DB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				726171321FAC24C3000E4DB8 /* Pixelford.app */,
+				726171461FAC24C3000E4DB8 /* PixelfordTests.xctest */,
+				726171511FAC24C3000E4DB8 /* PixelfordUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		726171341FAC24C3000E4DB8 /* Pixelford */ = {
+			isa = PBXGroup;
+			children = (
+				726171351FAC24C3000E4DB8 /* AppDelegate.swift */,
+				726171371FAC24C3000E4DB8 /* ViewController.swift */,
+				726171391FAC24C3000E4DB8 /* Main.storyboard */,
+				7261713C1FAC24C3000E4DB8 /* Assets.xcassets */,
+				7261713E1FAC24C3000E4DB8 /* LaunchScreen.storyboard */,
+				726171411FAC24C3000E4DB8 /* Info.plist */,
+			);
+			path = Pixelford;
+			sourceTree = "<group>";
+		};
+		726171491FAC24C3000E4DB8 /* PixelfordTests */ = {
+			isa = PBXGroup;
+			children = (
+				7261714A1FAC24C3000E4DB8 /* PixelfordTests.swift */,
+				7261714C1FAC24C3000E4DB8 /* Info.plist */,
+			);
+			path = PixelfordTests;
+			sourceTree = "<group>";
+		};
+		726171541FAC24C3000E4DB8 /* PixelfordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				726171551FAC24C3000E4DB8 /* PixelfordUITests.swift */,
+				726171571FAC24C3000E4DB8 /* Info.plist */,
+			);
+			path = PixelfordUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		726171311FAC24C3000E4DB8 /* Pixelford */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7261715A1FAC24C3000E4DB8 /* Build configuration list for PBXNativeTarget "Pixelford" */;
+			buildPhases = (
+				7261712E1FAC24C3000E4DB8 /* Sources */,
+				7261712F1FAC24C3000E4DB8 /* Frameworks */,
+				726171301FAC24C3000E4DB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pixelford;
+			productName = Pixelford;
+			productReference = 726171321FAC24C3000E4DB8 /* Pixelford.app */;
+			productType = "com.apple.product-type.application";
+		};
+		726171451FAC24C3000E4DB8 /* PixelfordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7261715D1FAC24C3000E4DB8 /* Build configuration list for PBXNativeTarget "PixelfordTests" */;
+			buildPhases = (
+				726171421FAC24C3000E4DB8 /* Sources */,
+				726171431FAC24C3000E4DB8 /* Frameworks */,
+				726171441FAC24C3000E4DB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				726171481FAC24C3000E4DB8 /* PBXTargetDependency */,
+			);
+			name = PixelfordTests;
+			productName = PixelfordTests;
+			productReference = 726171461FAC24C3000E4DB8 /* PixelfordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		726171501FAC24C3000E4DB8 /* PixelfordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 726171601FAC24C3000E4DB8 /* Build configuration list for PBXNativeTarget "PixelfordUITests" */;
+			buildPhases = (
+				7261714D1FAC24C3000E4DB8 /* Sources */,
+				7261714E1FAC24C3000E4DB8 /* Frameworks */,
+				7261714F1FAC24C3000E4DB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				726171531FAC24C3000E4DB8 /* PBXTargetDependency */,
+			);
+			name = PixelfordUITests;
+			productName = PixelfordUITests;
+			productReference = 726171511FAC24C3000E4DB8 /* PixelfordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7261712A1FAC24C3000E4DB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Ron Buencamino";
+				TargetAttributes = {
+					726171311FAC24C3000E4DB8 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					726171451FAC24C3000E4DB8 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 726171311FAC24C3000E4DB8;
+					};
+					726171501FAC24C3000E4DB8 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 726171311FAC24C3000E4DB8;
+					};
+				};
+			};
+			buildConfigurationList = 7261712D1FAC24C3000E4DB8 /* Build configuration list for PBXProject "Pixelford" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 726171291FAC24C3000E4DB8;
+			productRefGroup = 726171331FAC24C3000E4DB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				726171311FAC24C3000E4DB8 /* Pixelford */,
+				726171451FAC24C3000E4DB8 /* PixelfordTests */,
+				726171501FAC24C3000E4DB8 /* PixelfordUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		726171301FAC24C3000E4DB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726171401FAC24C3000E4DB8 /* LaunchScreen.storyboard in Resources */,
+				7261713D1FAC24C3000E4DB8 /* Assets.xcassets in Resources */,
+				7261713B1FAC24C3000E4DB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726171441FAC24C3000E4DB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7261714F1FAC24C3000E4DB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7261712E1FAC24C3000E4DB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726171381FAC24C3000E4DB8 /* ViewController.swift in Sources */,
+				726171361FAC24C3000E4DB8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726171421FAC24C3000E4DB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7261714B1FAC24C3000E4DB8 /* PixelfordTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7261714D1FAC24C3000E4DB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726171561FAC24C3000E4DB8 /* PixelfordUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		726171481FAC24C3000E4DB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 726171311FAC24C3000E4DB8 /* Pixelford */;
+			targetProxy = 726171471FAC24C3000E4DB8 /* PBXContainerItemProxy */;
+		};
+		726171531FAC24C3000E4DB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 726171311FAC24C3000E4DB8 /* Pixelford */;
+			targetProxy = 726171521FAC24C3000E4DB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		726171391FAC24C3000E4DB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7261713A1FAC24C3000E4DB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7261713E1FAC24C3000E4DB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7261713F1FAC24C3000E4DB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		726171581FAC24C3000E4DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		726171591FAC24C3000E4DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7261715B1FAC24C3000E4DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FWJ2FEXMP;
+				INFOPLIST_FILE = Pixelford/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agi.Pixelford;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7261715C1FAC24C3000E4DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FWJ2FEXMP;
+				INFOPLIST_FILE = Pixelford/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agi.Pixelford;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7261715E1FAC24C3000E4DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FWJ2FEXMP;
+				INFOPLIST_FILE = PixelfordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agi.PixelfordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pixelford.app/Pixelford";
+			};
+			name = Debug;
+		};
+		7261715F1FAC24C3000E4DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FWJ2FEXMP;
+				INFOPLIST_FILE = PixelfordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agi.PixelfordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pixelford.app/Pixelford";
+			};
+			name = Release;
+		};
+		726171611FAC24C3000E4DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FWJ2FEXMP;
+				INFOPLIST_FILE = PixelfordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agi.PixelfordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pixelford;
+			};
+			name = Debug;
+		};
+		726171621FAC24C3000E4DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FWJ2FEXMP;
+				INFOPLIST_FILE = PixelfordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agi.PixelfordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pixelford;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7261712D1FAC24C3000E4DB8 /* Build configuration list for PBXProject "Pixelford" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726171581FAC24C3000E4DB8 /* Debug */,
+				726171591FAC24C3000E4DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7261715A1FAC24C3000E4DB8 /* Build configuration list for PBXNativeTarget "Pixelford" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7261715B1FAC24C3000E4DB8 /* Debug */,
+				7261715C1FAC24C3000E4DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7261715D1FAC24C3000E4DB8 /* Build configuration list for PBXNativeTarget "PixelfordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7261715E1FAC24C3000E4DB8 /* Debug */,
+				7261715F1FAC24C3000E4DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		726171601FAC24C3000E4DB8 /* Build configuration list for PBXNativeTarget "PixelfordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726171611FAC24C3000E4DB8 /* Debug */,
+				726171621FAC24C3000E4DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7261712A1FAC24C3000E4DB8 /* Project object */;
+}
