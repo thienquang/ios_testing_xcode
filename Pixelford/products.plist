@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>com.pixelford.test.crop</string>
+	<string>com.pixelford.test.singleCredit</string>
+	<string>com.pixelford.test.blurFilter</string>
+	<string>com.pixelford.test.cloudbackup</string>
+</array>
+</plist>
