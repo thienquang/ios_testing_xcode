@@ -47,10 +47,6 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = Colors.lightGray
         self.view.backgroundColor = Colors.darkGray
         tableView.backgroundColor = Colors.darkGray
-        tableView.contentInset = UIEdgeInsets(top: -40, left: 0, bottom: 0, right: 0)
-        
-        let point = CGPoint(x: 0, y: -tableView.contentInset.top)
-        tableView.setContentOffset(point, animated: false)
     }
     
     func presentStore() {
