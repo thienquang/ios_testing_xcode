@@ -52,19 +52,7 @@ class LibraryDetailView: UIViewController {
     }
     
     @objc func uploadImage() {
-        if var credits = UserDefaults.standard.value(forKey: "com.pixelford.test.singleCredit") as? Int {
-            if credits > 0 {
-                credits -= 1
-                print("item uploaded")
-                updateCreditAmount(amount: credits)
-            } else {
-                // No more credits
-                showPurchaseAlert()
-            }
-        } else {
-            // Never purchased any
-            showPurchaseAlert()
-        }
+        showPurchaseAlert()
     }
     
     func showPurchaseAlert() {
@@ -72,11 +60,6 @@ class LibraryDetailView: UIViewController {
         let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(ok)
         self.present(alert, animated: true, completion: nil)
-    }
-    
-    func updateCreditAmount(amount: Int) {
-        UserDefaults.standard.set(amount, forKey: "com.pixelford.test.singleCredit")
-        UserDefaults.standard.synchronize()
     }
     
     //MARK: Filter toolbar
@@ -91,22 +74,6 @@ class LibraryDetailView: UIViewController {
     }
     
     func checkForUnlockedFilters() {
-        var items:[UIBarButtonItem] = toolbarItems()
         
-        let blurFilterStatus = UserDefaults.standard.bool(forKey: "com.pixelford.test.blurFilter")
-        if blurFilterStatus {
-            let blur = UIBarButtonItem(image: UIImage(named: "Filter-Blur"), style: .plain, target: nil, action: nil)
-            blur.tintColor = Colors.darkGray
-            items.append(blur)
-        }
-        
-        let cropFilterStatus = UserDefaults.standard.bool(forKey: "com.pixelford.test.crop")
-        if cropFilterStatus {
-            let crop = UIBarButtonItem(image: UIImage(named: "Filter-Crop"), style: .plain, target: nil, action: nil)
-            crop.tintColor = Colors.darkGray
-            items.append(crop)
-        }
-        
-        toolbar.setItems(items, animated: false)
     }
 }
