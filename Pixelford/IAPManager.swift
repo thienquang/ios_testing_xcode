@@ -25,6 +25,28 @@ class IAPManager: NSObject, SKProductsRequestDelegate {
         completion(false)
     }
     
+    func getProductIdentifiers() -> [String] {
+        var identifiers:[String] = []
+        
+        if let fileUrl = Bundle.main.url(forResource: "products", withExtension: "plist") {
+            let products = NSArray(contentsOf: fileUrl)!
+            
+            for product in products as! [String] {
+                identifiers.append(product)
+            }
+        }
+        
+        return identifiers
+    }
+    
+    func performProductRequestForIdentifiers(identifiers: [String]) {
+        let products = NSSet(array: identifiers) as! Set<String>
+        
+        self.request = SKProductsRequest(productIdentifiers: products)
+        self.request.delegate = self
+        self.request.start()
+    }
+    
     // MARK: SKProductsRequestDelegate
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         self.products = response.products

@@ -15,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        IAPManager.sharedInstance.setupPurchases { (canPurchase) in
+            if canPurchase {
+                IAPManager.sharedInstance.performProductRequestForIdentifiers(identifiers: IAPManager.sharedInstance.getProductIdentifiers())
+            }
+        }
+        
         return true
     }
 
