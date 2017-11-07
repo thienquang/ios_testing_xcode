@@ -9,7 +9,7 @@
 import UIKit
 import StoreKit
 
-class IAPManager: NSObject, SKProductsRequestDelegate {
+class IAPManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObserver {
     static let sharedInstance = IAPManager()
     
     var request:SKProductsRequest!
@@ -18,6 +18,7 @@ class IAPManager: NSObject, SKProductsRequestDelegate {
     func setupPurchases(_ completion: @escaping (Bool) -> Void) {
         // Check if we can make payments
         if SKPaymentQueue.canMakePayments() {
+            SKPaymentQueue.default().add(self)
             completion(true)
             return
         }
@@ -59,5 +60,47 @@ class IAPManager: NSObject, SKProductsRequestDelegate {
         payment.quantity = 1
         
         SKPaymentQueue.default().add(payment)
+    }
+    
+    // MARK: SKPaymentTransactionObserver
+    func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
+        //
+        transactions.forEach { (transaction) in
+            switch transaction.transactionState {
+            case .purchasing:
+                print("purchasing")
+                break
+            case .deferred:
+                print("deferred")
+                break
+            case .failed:
+                print("failed: \(transaction.error?.localizedDescription ?? "No error returned")")
+                SKPaymentQueue.default().finishTransaction(transaction)
+                break
+            case .purchased:
+                print("purchased")
+                SKPaymentQueue.default().finishTransaction(transaction)
+                break
+            case .restored:
+                print("restored")
+                break
+            }
+        }
+    }
+    
+    func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Error) {
+        //
+    }
+    
+    func paymentQueue(_ queue: SKPaymentQueue, removedTransactions transactions: [SKPaymentTransaction]) {
+        //
+    }
+    
+    func paymentQueue(_ queue: SKPaymentQueue, updatedDownloads downloads: [SKDownload]) {
+        //
+    }
+    
+    func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
+        //
     }
 }
