@@ -38,26 +38,18 @@ class StoreTableViewController: UITableViewController {
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
-    func priceStringForProduct(product:SKProduct) -> String {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        formatter.locale = product.priceLocale
-        
-        return formatter.string(from: product.price)!
-    }
-    
     @objc func restorePurchases() {
-        IAPManager.sharedInstance.restorePurchasedItems()
+        print("restorePurchases()")
     }
     
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return IAPManager.sharedInstance.products.count
+        return 0
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -75,20 +67,11 @@ class StoreTableViewController: UITableViewController {
         
         let price = cell.viewWithTag(3) as! UILabel
         price.textColor = Colors.mediumPurple
-
-        let product = IAPManager.sharedInstance.products[indexPath.section]
-        
-        title.text = product.localizedTitle
-        description.text = product.localizedDescription
-        price.text = self.priceStringForProduct(product: product)
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        IAPManager.sharedInstance.createPaymentRequestForProduct(product: IAPManager.sharedInstance.products[indexPath.section])
-        
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
