@@ -55,12 +55,6 @@ class ViewController: UIViewController {
         }
     }
     
-    func presentSubscriptionController() {
-        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "SubscriptionController") as? SubscriptionController {
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-    }
-    
     func presentLibrary() {
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "LibraryController") as? LibraryController {
             self.navigationController?.pushViewController(vc, animated: true)
