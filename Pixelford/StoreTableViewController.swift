@@ -78,6 +78,9 @@ class StoreTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let product = IAPManager.sharedInstance.products[indexPath.section]
+        IAPManager.sharedInstance.createPaymentRequestForProduct(product: product)
+        
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
