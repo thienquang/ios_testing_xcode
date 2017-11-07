@@ -45,11 +45,11 @@ class StoreTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return IAPManager.sharedInstance.products.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -67,6 +67,12 @@ class StoreTableViewController: UITableViewController {
         
         let price = cell.viewWithTag(3) as! UILabel
         price.textColor = Colors.mediumPurple
+        
+        let product = IAPManager.sharedInstance.products[indexPath.section]
+        
+        title.text = product.localizedTitle
+        description.text = product.localizedDescription
+        price.text = ProductManager.priceStringForProduct(locale: product.priceLocale, price: product.price)
         
         return cell
     }
