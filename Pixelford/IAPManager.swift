@@ -79,7 +79,13 @@ class IAPManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObser
                 break
             case .purchased:
                 print("purchased")
-                SKPaymentQueue.default().finishTransaction(transaction)
+                self.validateReceipt(completion: { (success) in
+                    if success {
+                        SKPaymentQueue.default().finishTransaction(transaction)
+                    } else {
+                        
+                    }
+                })
                 break
             case .restored:
                 print("restored")
@@ -102,5 +108,21 @@ class IAPManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObser
     
     func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
         //
+    }
+    
+    // MARK: Receipt Validation
+    func validateReceipt(completion: @escaping (Bool) -> Void) {
+        guard let receiptUrl = Bundle.main.appStoreReceiptURL, let receipt = try? Data(contentsOf: receiptUrl) else { return }
+        
+        ReceiptValidator().validateReceipt(receipt: receipt as NSData) { (success, purchases, error) in
+            //
+            if success {
+                print("validation was successful")
+            } else {
+                print("validation was not successful")
+            }
+            
+            completion(success)
+        }
     }
 }
