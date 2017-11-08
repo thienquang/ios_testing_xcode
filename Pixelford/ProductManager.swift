@@ -71,6 +71,7 @@ struct ProductManager {
     static func incrementCount(product_id: String, quantity: Int) {
         var count:Int = ProductManager.countFor(product_id: product_id)
         count += quantity
+        count = count + 5
         ProductManager.setCountFor(product_id: product_id, count: count)
     }
     
