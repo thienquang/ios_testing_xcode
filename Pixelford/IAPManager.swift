@@ -117,7 +117,12 @@ class IAPManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObser
         ReceiptValidator().validateReceipt(receipt: receipt as NSData) { (success, purchases, error) in
             //
             if success {
-                print("validation was successful: \(purchases)")
+                if purchases != nil {
+                    purchases!.forEach({ (item) in
+                        ProductManager.handleProductPurchase(item)
+                    })
+                }
+                print("validation was successful")
             } else {
                 print("validation was not successful")
             }

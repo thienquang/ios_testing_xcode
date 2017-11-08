@@ -11,6 +11,23 @@ import Foundation
 struct ProductManager {
     static func handleProductPurchase(_ product: NSDictionary) {
         // Perform actions based on product identifier
+        guard let product_id = product["product_id"] as? String else { return }
+        
+        if product_id.contains("com.pixelford.photoapp.consumable") {
+            ProductManager.incrementCount(product_id: product_id, quantity: 1)
+            return
+        }
+        
+        if product_id.contains("com.pixelford.photoapp.filter") {
+            ProductManager.unlockFunctionalityForProduct(productID: product_id)
+            return
+        }
+        
+        if product_id.contains("com.pixelford.photoapp.subscription") {
+            guard let expires_date_ms = product["expires_date_ms"] as? String else { return }
+            let expires_date = Double(expires_date_ms)
+            validateSubscription(product_id: product_id, expires_date_ms: expires_date!)
+        }
     }
     
     /**

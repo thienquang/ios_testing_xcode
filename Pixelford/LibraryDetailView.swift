@@ -52,7 +52,19 @@ class LibraryDetailView: UIViewController {
     }
     
     @objc func uploadImage() {
-        showPurchaseAlert()
+        let product_id = "com.pixelford.photoapp.consumable.credit"
+        print("credits available: \(ProductManager.countFor(product_id: product_id))")
+        let credits = ProductManager.countFor(product_id: product_id)
+        
+        if credits == 0 {
+            showPurchaseAlert()
+            return
+        }
+        
+        print("credit used")
+        ProductManager.decrementCount(product_id: product_id, quantity: 1)
+        print("credits available: \(ProductManager.countFor(product_id: product_id))")
+        
     }
     
     func showPurchaseAlert() {
@@ -74,6 +86,22 @@ class LibraryDetailView: UIViewController {
     }
     
     func checkForUnlockedFilters() {
+        var items:[UIBarButtonItem] = toolbarItems()
         
+        let blurStatus = UserDefaults.standard.bool(forKey: "com.pixelford.photoapp.filter.blur")
+        if blurStatus {
+            let blur = UIBarButtonItem(image: UIImage(named: "Filter-Blur"), style: .plain, target: nil, action: nil)
+            blur.tintColor = Colors.darkGray
+            items.append(blur)
+        }
+        
+        let cropStatus = UserDefaults.standard.bool(forKey: "com.pixelford.photoapp.filter.crop")
+        if cropStatus {
+            let crop = UIBarButtonItem(image: UIImage(named: "Filter-Crop"), style: .plain, target: nil, action: nil)
+            crop.tintColor = Colors.darkGray
+            items.append(crop)
+        }
+        
+        toolbar.setItems(items, animated: false)
     }
 }
