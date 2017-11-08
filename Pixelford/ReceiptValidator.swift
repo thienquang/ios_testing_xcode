@@ -11,7 +11,7 @@ import StoreKit
 
 class ReceiptValidator: NSObject, SKRequestDelegate {
     
-    let kSharedSecret = "CHANGE ME"
+    let kSharedSecret = "52afa7a42a5949eba329d1db7dc551b9"
     
     var kAppVersion:String? {
         let dict:[String:Any]? = Bundle.main.infoDictionary
@@ -28,7 +28,7 @@ class ReceiptValidator: NSObject, SKRequestDelegate {
         //Format JSON
         let receiptData:NSString = receipt.base64EncodedString(options: .init(rawValue: 0)) as NSString
         
-        let dict:NSDictionary = ["receipt-data" : receiptData]
+        let dict:NSDictionary = ["receipt-data" : receiptData, "password" : kSharedSecret]
         let jsonData = try! JSONSerialization.data(withJSONObject: dict, options: .init(rawValue: 0))
         
         let request = NSMutableURLRequest(url: URL(string: "https://sandbox.itunes.apple.com/verifyReceipt")!)
@@ -44,11 +44,31 @@ class ReceiptValidator: NSObject, SKRequestDelegate {
                 return
             }
             
+            var products:[NSDictionary] = []
+            
             do {
                 let json = try JSONSerialization.jsonObject(with: data!, options: .mutableLeaves) as! NSDictionary
                 if (json.object(forKey: "status") as! NSNumber) == 0 {
+                    if let latest_receipt = json["latest_receipt_info"] as? NSArray {
+                        latest_receipt.forEach({ (item) in
+                            if let purchase = item as? NSDictionary {
+                                products.append(purchase)
+                            }
+                        })
+                    } else {
+                        if let receipt_dict = json["receipt"] as? NSDictionary {
+                            if let purchases = receipt_dict["in_app"] as? NSArray {
+                                purchases.forEach({ (item) in
+                                    if let purchase = item as? NSDictionary {
+                                        products.append(purchase)
+                                    }
+                                })
+                            }
+                        }
+                    }
+                    
                     print("valid receipt")
-                    handler(true, nil, nil)
+                    handler(true, products, nil)
                 } else {
                     print("invalid receipt code: \(json.object(forKey: "status") as! NSNumber)")
                     handler(false, nil, nil)
