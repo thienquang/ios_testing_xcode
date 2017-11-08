@@ -39,7 +39,7 @@ class StoreTableViewController: UITableViewController {
     }
     
     @objc func restorePurchases() {
-        print("restorePurchases()")
+        IAPManager.sharedInstance.restorePreviousPurchases()
     }
     
     // MARK: - Table view data source

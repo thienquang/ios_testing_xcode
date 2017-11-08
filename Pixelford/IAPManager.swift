@@ -89,6 +89,7 @@ class IAPManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObser
                 break
             case .restored:
                 print("restored")
+                SKPaymentQueue.default().finishTransaction(transaction)
                 break
             }
         }
@@ -107,7 +108,13 @@ class IAPManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObser
     }
     
     func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
-        //
+        self.validateReceipt { (success) in
+            if success {
+                print("purchase restoration complete")
+            } else {
+                print("purchase restoration failed")
+            }
+        }
     }
     
     // MARK: Receipt Validation
@@ -129,5 +136,10 @@ class IAPManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObser
             
             completion(success)
         }
+    }
+    
+    // MARK: Restore Purchases
+    func restorePreviousPurchases() {
+        SKPaymentQueue.default().restoreCompletedTransactions()
     }
 }
