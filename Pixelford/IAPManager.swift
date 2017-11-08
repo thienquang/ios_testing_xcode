@@ -142,4 +142,9 @@ class IAPManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObser
     func restorePreviousPurchases() {
         SKPaymentQueue.default().restoreCompletedTransactions()
     }
+    
+    // MARK: Ask For Review
+    func askForReview() {
+        SKStoreReviewController.requestReview()
+    }
 }

@@ -35,6 +35,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         setupView()
+        
+        let time = DispatchTime.now() + 3
+        DispatchQueue.main.asyncAfter(deadline: time) {
+            IAPManager.sharedInstance.askForReview()
+        }
     }
 
     override func didReceiveMemoryWarning() {
