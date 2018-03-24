@@ -88,6 +88,8 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         cell!.layer.borderColor = Colors.lightGray.cgColor
         cell!.layer.borderWidth = 1.0
         cell!.layer.cornerRadius = 5.0
+      
+      cell!.accessibilityIdentifier = menuItems[indexPath.section]
         return cell!
     }
     

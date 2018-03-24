@@ -30,7 +30,28 @@
 		726171901FAD4D0E000E4DB8 /* LibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261718F1FAD4D0E000E4DB8 /* LibraryController.swift */; };
 		726171921FAD4F18000E4DB8 /* LibraryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726171911FAD4F18000E4DB8 /* LibraryDetailView.swift */; };
 		726EC1781FADABC300C64DF0 /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726EC1771FADABC300C64DF0 /* ProductManager.swift */; };
+		DD6FC2142063F596005A4523 /* PixelfordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FC2132063F596005A4523 /* PixelfordTests.swift */; };
+		DD7700F7206657AD007305C3 /* DHURLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7700F5206657AD007305C3 /* DHURLSessionMock.swift */; };
+		DD7700F8206657AD007305C3 /* ProductSample.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD7700F6206657AD007305C3 /* ProductSample.plist */; };
+		DD77010020665D8C007305C3 /* PixelfordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7700FF20665D8C007305C3 /* PixelfordUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD6FC2162063F596005A4523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7261712A1FAC24C3000E4DB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 726171311FAC24C3000E4DB8;
+			remoteInfo = Pixelford;
+		};
+		DD77010220665D8C007305C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7261712A1FAC24C3000E4DB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 726171311FAC24C3000E4DB8;
+			remoteInfo = Pixelford;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		726171321FAC24C3000E4DB8 /* Pixelford.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pixelford.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,10 +79,32 @@
 		7261718F1FAD4D0E000E4DB8 /* LibraryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryController.swift; sourceTree = "<group>"; };
 		726171911FAD4F18000E4DB8 /* LibraryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryDetailView.swift; sourceTree = "<group>"; };
 		726EC1771FADABC300C64DF0 /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
+		DD6FC2112063F596005A4523 /* PixelfordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelfordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD6FC2132063F596005A4523 /* PixelfordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelfordTests.swift; sourceTree = "<group>"; };
+		DD6FC2152063F596005A4523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD7700F5206657AD007305C3 /* DHURLSessionMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHURLSessionMock.swift; sourceTree = "<group>"; };
+		DD7700F6206657AD007305C3 /* ProductSample.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProductSample.plist; sourceTree = "<group>"; };
+		DD7700FD20665D8C007305C3 /* PixelfordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelfordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7700FF20665D8C007305C3 /* PixelfordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelfordUITests.swift; sourceTree = "<group>"; };
+		DD77010120665D8C007305C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7261712F1FAC24C3000E4DB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD6FC20E2063F596005A4523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7700FA20665D8C007305C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				726171341FAC24C3000E4DB8 /* Pixelford */,
+				DD6FC2122063F596005A4523 /* PixelfordTests */,
+				DD7700FE20665D8C007305C3 /* PixelfordUITests */,
 				726171331FAC24C3000E4DB8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				726171321FAC24C3000E4DB8 /* Pixelford.app */,
+				DD6FC2112063F596005A4523 /* PixelfordTests.xctest */,
+				DD7700FD20665D8C007305C3 /* PixelfordUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +137,8 @@
 		726171341FAC24C3000E4DB8 /* Pixelford */ = {
 			isa = PBXGroup;
 			children = (
+				DD7700F5206657AD007305C3 /* DHURLSessionMock.swift */,
+				DD7700F6206657AD007305C3 /* ProductSample.plist */,
 				7261717A1FAD4A23000E4DB8 /* Photo Library Assets */,
 				726171351FAC24C3000E4DB8 /* AppDelegate.swift */,
 				726171371FAC24C3000E4DB8 /* ViewController.swift */,
@@ -126,6 +175,24 @@
 			path = "Photo Library Assets";
 			sourceTree = "<group>";
 		};
+		DD6FC2122063F596005A4523 /* PixelfordTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD6FC2132063F596005A4523 /* PixelfordTests.swift */,
+				DD6FC2152063F596005A4523 /* Info.plist */,
+			);
+			path = PixelfordTests;
+			sourceTree = "<group>";
+		};
+		DD7700FE20665D8C007305C3 /* PixelfordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD7700FF20665D8C007305C3 /* PixelfordUITests.swift */,
+				DD77010120665D8C007305C3 /* Info.plist */,
+			);
+			path = PixelfordUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,19 +213,65 @@
 			productReference = 726171321FAC24C3000E4DB8 /* Pixelford.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DD6FC2102063F596005A4523 /* PixelfordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD6FC21A2063F596005A4523 /* Build configuration list for PBXNativeTarget "PixelfordTests" */;
+			buildPhases = (
+				DD6FC20D2063F596005A4523 /* Sources */,
+				DD6FC20E2063F596005A4523 /* Frameworks */,
+				DD6FC20F2063F596005A4523 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD6FC2172063F596005A4523 /* PBXTargetDependency */,
+			);
+			name = PixelfordTests;
+			productName = PixelfordTests;
+			productReference = DD6FC2112063F596005A4523 /* PixelfordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD7700FC20665D8C007305C3 /* PixelfordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD77010420665D8C007305C3 /* Build configuration list for PBXNativeTarget "PixelfordUITests" */;
+			buildPhases = (
+				DD7700F920665D8C007305C3 /* Sources */,
+				DD7700FA20665D8C007305C3 /* Frameworks */,
+				DD7700FB20665D8C007305C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD77010320665D8C007305C3 /* PBXTargetDependency */,
+			);
+			name = PixelfordUITests;
+			productName = PixelfordUITests;
+			productReference = DD7700FD20665D8C007305C3 /* PixelfordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7261712A1FAC24C3000E4DB8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Ron Buencamino";
 				TargetAttributes = {
 					726171311FAC24C3000E4DB8 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+					};
+					DD6FC2102063F596005A4523 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 726171311FAC24C3000E4DB8;
+					};
+					DD7700FC20665D8C007305C3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 726171311FAC24C3000E4DB8;
 					};
 				};
 			};
@@ -176,6 +289,8 @@
 			projectRoot = "";
 			targets = (
 				726171311FAC24C3000E4DB8 /* Pixelford */,
+				DD6FC2102063F596005A4523 /* PixelfordTests */,
+				DD7700FC20665D8C007305C3 /* PixelfordUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,12 +308,27 @@
 				7261718A1FAD4A3D000E4DB8 /* 04_lg.png in Resources */,
 				7261713D1FAC24C3000E4DB8 /* Assets.xcassets in Resources */,
 				726171881FAD4A3D000E4DB8 /* 02_sm.png in Resources */,
+				DD7700F8206657AD007305C3 /* ProductSample.plist in Resources */,
 				726171891FAD4A3D000E4DB8 /* 04_sm.png in Resources */,
 				7261713B1FAC24C3000E4DB8 /* Main.storyboard in Resources */,
 				7261718E1FAD4A3D000E4DB8 /* 03_sm.png in Resources */,
 				7261718C1FAD4A3D000E4DB8 /* 03_lg.png in Resources */,
 				7261718B1FAD4A3D000E4DB8 /* 01_sm.png in Resources */,
 				726171851FAD4A3D000E4DB8 /* 05_lg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD6FC20F2063F596005A4523 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7700FB20665D8C007305C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7700F7206657AD007305C3 /* DHURLSessionMock.swift in Sources */,
 				726171641FAC2573000E4DB8 /* IAPManager.swift in Sources */,
 				726EC1781FADABC300C64DF0 /* ProductManager.swift in Sources */,
 				726171381FAC24C3000E4DB8 /* ViewController.swift in Sources */,
@@ -221,7 +352,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DD6FC20D2063F596005A4523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD6FC2142063F596005A4523 /* PixelfordTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7700F920665D8C007305C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD77010020665D8C007305C3 /* PixelfordUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD6FC2172063F596005A4523 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 726171311FAC24C3000E4DB8 /* Pixelford */;
+			targetProxy = DD6FC2162063F596005A4523 /* PBXContainerItemProxy */;
+		};
+		DD77010320665D8C007305C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 726171311FAC24C3000E4DB8 /* Pixelford */;
+			targetProxy = DD77010220665D8C007305C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		726171391FAC24C3000E4DB8 /* Main.storyboard */ = {
@@ -355,11 +515,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6FWJ2FEXMP;
+				DEVELOPMENT_TEAM = 3WAF7L6RYK;
 				INFOPLIST_FILE = Pixelford/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pixelford.photoapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quangthien.org;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -371,14 +531,78 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6FWJ2FEXMP;
+				DEVELOPMENT_TEAM = 3WAF7L6RYK;
 				INFOPLIST_FILE = Pixelford/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pixelford.photoapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quangthien.org;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DD6FC2182063F596005A4523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WAF7L6RYK;
+				INFOPLIST_FILE = PixelfordTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thienquang.PixelfordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pixelford.app/Pixelford";
+			};
+			name = Debug;
+		};
+		DD6FC2192063F596005A4523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WAF7L6RYK;
+				INFOPLIST_FILE = PixelfordTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thienquang.PixelfordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pixelford.app/Pixelford";
+			};
+			name = Release;
+		};
+		DD77010520665D8C007305C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PixelfordUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thienquang.PixelfordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pixelford;
+			};
+			name = Debug;
+		};
+		DD77010620665D8C007305C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PixelfordUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thienquang.PixelfordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pixelford;
 			};
 			name = Release;
 		};
@@ -399,6 +623,24 @@
 			buildConfigurations = (
 				7261715B1FAC24C3000E4DB8 /* Debug */,
 				7261715C1FAC24C3000E4DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD6FC21A2063F596005A4523 /* Build configuration list for PBXNativeTarget "PixelfordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD6FC2182063F596005A4523 /* Debug */,
+				DD6FC2192063F596005A4523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD77010420665D8C007305C3 /* Build configuration list for PBXNativeTarget "PixelfordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD77010520665D8C007305C3 /* Debug */,
+				DD77010620665D8C007305C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
